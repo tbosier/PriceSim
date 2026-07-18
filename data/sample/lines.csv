@@ -1,0 +1,5 @@
+line_id,name,capability,max_parallel_jobs
+L1,Alpha Line,general,1
+L2,Beta Line,general,1
+L3,Gamma Line,advanced,1
+L4,Delta Line,advanced,1

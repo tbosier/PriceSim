@@ -1,0 +1,17 @@
+# Factory with spare capacity: opportunity cost is low, so quotes soften.
+foundry:
+  n_lines: 4
+  hours_per_line_week: 168
+  base_line_hour_cost: 900
+  base_line_hour_value: 1600
+  engineering_hour_cost: 175
+  current_utilization: 0.55
+  target_margin: 0.35
+  risk_percentile: 0.75
+  downtime_probability: 0.12
+  downtime_hours_mean: 16
+  downtime_hours_sd: 8
+
+simulation:
+  n_sims: 20000
+  random_seed: 42

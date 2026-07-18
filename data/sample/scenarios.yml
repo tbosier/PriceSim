@@ -1,0 +1,59 @@
+# Three scenarios that consume the same total line-weeks but concentrate
+# capacity very differently. This is the core "1x4 != 4x1" comparison.
+scenarios:
+  - name: "Economy: 1 line x 4 weeks"
+    lines_requested: 1
+    production_weeks: 4
+    tooling_weeks_mean: 1.5
+    tooling_weeks_sd: 0.5
+    debug_weeks_mean: 0.75
+    debug_weeks_sd: 0.35
+    engineering_hours_mean: 300
+    engineering_hours_sd: 100
+    tooling_parts_cost_mean: 250000
+    tooling_parts_cost_sd: 75000
+    expected_units: 250000
+    revenue_per_unit: 8.0
+    variable_cost_per_unit: 2.75
+    yield_alpha: 35
+    yield_beta: 8
+    expedite_willingness_to_pay: 0.00
+    retooling_complexity: "medium"
+
+  - name: "Standard: 2 lines x 2 weeks"
+    lines_requested: 2
+    production_weeks: 2
+    tooling_weeks_mean: 1.5
+    tooling_weeks_sd: 0.5
+    debug_weeks_mean: 0.75
+    debug_weeks_sd: 0.35
+    engineering_hours_mean: 300
+    engineering_hours_sd: 100
+    tooling_parts_cost_mean: 250000
+    tooling_parts_cost_sd: 75000
+    expected_units: 250000
+    revenue_per_unit: 8.0
+    variable_cost_per_unit: 2.75
+    yield_alpha: 35
+    yield_beta: 8
+    expedite_willingness_to_pay: 0.05
+    retooling_complexity: "medium"
+
+  - name: "Expedited: 4 lines x 1 week"
+    lines_requested: 4
+    production_weeks: 1
+    tooling_weeks_mean: 1.5
+    tooling_weeks_sd: 0.5
+    debug_weeks_mean: 0.75
+    debug_weeks_sd: 0.35
+    engineering_hours_mean: 300
+    engineering_hours_sd: 100
+    tooling_parts_cost_mean: 250000
+    tooling_parts_cost_sd: 75000
+    expected_units: 250000
+    revenue_per_unit: 8.0
+    variable_cost_per_unit: 2.75
+    yield_alpha: 35
+    yield_beta: 8
+    expedite_willingness_to_pay: 0.10
+    retooling_complexity: "medium"

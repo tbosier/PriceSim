@@ -1,0 +1,6 @@
+job_id,customer,required_line_weeks,margin_value,due_week,late_penalty_per_week,priority
+B001,NeuroChip Labs,2.0,2100000,3,150000,3
+B002,Medical Nano Systems,1.5,900000,4,75000,2
+B003,Defense BioCompute,3.0,4500000,6,250000,5
+B004,University Lab Pilot,0.5,180000,2,25000,1
+B005,Strategic Whale Customer,4.0,8000000,8,400000,5
